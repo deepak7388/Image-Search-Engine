@@ -1,0 +1,91 @@
+/* This property will applicable on  all the html elements */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkcyan;
+  color: #fff;
+}
+h1 {
+  text-align: center;
+  margin: 100px auto 50px;
+  /*   100px top left-right auto bottom 50px */
+  font-weight: 600;
+}
+
+/* add css into form */
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  height: 80px;
+  background: lightseagreen;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+form input {
+  /* use entire space available in the form flex1 */
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 18px;
+  /* 0 top-bottom 30 left-right */
+  padding: 0 30px;
+}
+
+form button {
+  padding: 0 40px;
+  height: 100%;
+  background: skyblue;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* change the font color of placeholder */
+::placeholder {
+  color: #fff;
+  font-size: 18px;
+}
+#show-more-btn {
+  background: pink;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  padding: 10px, 20px;
+  border-radius: 4px;
+  margin: 10px auto 100px;
+  /* top 10px left-right auto bottom 100px */
+  cursor: pointer;
+  /* display: block; */
+  /* this button should be hide ,it will be displayed when we 
+  will load any image using API */
+  display: none;
+}
+
+/* align images */
+#search-result {
+  width: 80%;
+  margin: 100px auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#search-result img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+}
